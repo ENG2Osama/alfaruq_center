@@ -6,11 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>مركز الفاروق</title>
     <style>body{
-        background-image: url(logo/logo.png);
-        background-size:400px 400px;
-        background-color: #d3d2d0;
-        background-repeat: no-repeat;
-        background-position: center 250px;
+        background-color: rgba(243, 245, 247, 0.653);
+        
     }*{
         margin: 0px;
     }
@@ -34,7 +31,7 @@
             margin-bottom: 70px;
         }
         .head{
-            background-color:  rgb(125, 125, 234);
+            background-color: #007bff;
             margin-bottom: -65px;
            
 
@@ -58,26 +55,120 @@
        
         }
         .im{
-            height: 35px;
-            width: 35px;
+            height: 45px;
+            width: 45px;
             margin-right: 7px;
+          
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
         }
-        .ho{ margin-top: 250px;
-            height: 20px;
+        .ho{ margin-top: 140px;
+            height: 140px;
             width: 100vw;
-            background-color: rgb(0, 0, 0);
+            background-image: url(logo/39.jpg);
+            background-color: rgba(233, 234, 235, 0.649);
             padding: 7px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+
+
+
+
+
+        header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  z-index: 100;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+padding-right: 50px;
+}
+
+.logo img {
+  max-height: 50px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+}
+.di {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.di:hover {
+  background-color: #0056b3;
+}
+h1, h2, h3 {
+  color: #007bff; 
+}
+
+section {
+  padding: 40px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin:200px 35px 100px 25px
+ 
+}
+.center-name {
+  font-family: 'خط المهند', sans-serif; 
+  font-size: 48px; 
+  color: #007bff; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
     </style>
 </head>
 <body>
-    <center class="head"> 
-        <h1> <img src="logo/logo.png" style="margin-left: 3px;">
-      <b class="markz"> مركز الفاروق </b> 
-   
-  </h1>  </center>
+    <header>
+        <div class="container">
+          <a href="#" class="logo">
+            <img src="logo/logo.png" alt="شعار مركز الفاروق">
+          </a>
+          <nav>
+            <ul>
+              <li><a href="#">اتصل بنا</a></li> 
+              
+              <li><a href="#">الدورات</a></li>
+             <li><a href="#">عن المركز</a></li>
+              <li><a href="#">الرئيسية</a></li>
+            </ul>
+          </nav>
+        </div> <hr>
+      </header>
+     
+    
   <center> 
-    <h2 style="margin-bottom: -5px; background-color:  rgba(99, 99, 252, 0.962); margin: 7px 90px 7px 90px; border-radius: 10px; height: 35px;">مشايخ الدورة الشرعية</h2>
+    <section >  
+       
+        <h1 class="center-name" style="margin-top: 5px;">مركز الفاروق</h1>
+        <h2 style="margin:5px 0px 5px 0px;">مشايخ الدورة الشرعية</h2>
  <h3> <div class="div"></div>
     <div class="div1 di"style="margin-top: 0px;"><div><img class="im" style="margin-right: 40px;" src="mansor/mansor.jpg"></div><div> <a href="./mansor/mansor.html">الشيخ/منصور المنيفي</a></div> </div>
     <div class="div2 di"><div><img class="im" style="margin-right: 40px;" src="sameer/sameer.jpg"></div> <div><a href="./sameer/sameer.html"> الشيخ/سمير المخلافي</a></div></div>
@@ -86,10 +177,17 @@
     <div class="div5 di"><div><img class="im" style="margin-right: 45px;" src="mohmmed/mohmmed.jpg"></div><div><a href="./mohmmed/mohmmed.html">  الشيخ/محمد سنحان</a></div></div>
     <div class="div6 di"><div><img class="im" style="margin-right: 40px;" src="asam/asam.jpg"></div><div><a href="./asam/asam.html"> الشيخ/عصام المليكي</a></div>
 
-</h3>  </div>
+</h3>  </div></section>
     </center>
-    <div class="ho"><center>
-        <h4 style="color: azure;">حقوق الطبع و النشر محفوظة 2025</h4>
+    
+    <div class="ho"><center><h3 style="margin-bottom: 5px;">لا تنسونا من خالص دعائكم</h3>
+       <h4>قال رسول الله صلى الله عليه وسلم
+
+           <h3 style="color: black; margin: 10px 0px 10px 0px;"> مَنْ يُرِدِ اللَّهُ بِهِ خَيْرًا يُفَقِّهْهُ فِي الدِّينِ
+         </h3>   رواه البخاري
+
+           </h4>  
+        <h3 style=" margin-top: 13px;  color: #1a85f8; ">حقوق الطبع و النشر محفوظة ل-مركز الفاروق 2025 <a href="https://eng2osama.github.io/my_prof/#con"><b style="margin-right: 25px;">تصميم و برمجة م/اسامة احمد</b></a></h3>
         
 
 </center>
