@@ -1,0 +1,74 @@
+ body{
+            background-color: #fbf9f7b3;
+        }
+        img{
+            border-radius: 100vw;
+            height:400px;
+        }.dv{
+            display: flex;
+            flex-direction: column;
+           
+           
+        }.di{ background-color: #007bff;
+           
+        border-radius: 5px;
+        margin: 10px;
+        margin-bottom:-10px;
+       height:  30px;
+     
+       padding:4px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+          padding: 10px 20px;
+  border: none;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease; 
+  margin-top: 17px; 
+       color: rgb(255, 255, 255);
+        }
+        .ho{ margin-top: 140px;
+            height: 210px;
+            width: 98%;
+            background-image: url(../logo/39.jpg);
+            background-color: rgba(233, 234, 235, 0.425);
+            padding: 7px;
+            min-width: 99%;
+        }
+
+
+.di:hover {
+  background-color: #0056b3;
+
+}
+section {
+  padding: 40px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+ 
+}
+.dawnload{
+            background-color: rgb(61, 104, 224);
+            height: 35px;
+            margin: 5% 30%;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+         
+ } .logo{
+            height: 30px;
+            width: 30px;
+        }
+        *{
+        margin-right: 0px;
+        text-decoration: none;
+        margin-left: 0px;
+    }.head{
+        position: sticky; top: 4px; background: #dbdada; height: 30px;border: blue solid 2px;border-radius: 9px;
+        width: 95%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
