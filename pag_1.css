@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #007bff;
+    --background-color: #ffffff;
+    --text-color: #333333;
+}
 body{
         background-color: rgba(243, 245, 247, 0.653);
        margin: 0;
@@ -71,12 +76,6 @@ body{
         }
 
 
-
-        container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
   .logo img {
     max-height: 40px;
   }
@@ -110,14 +109,16 @@ body{
   flex-wrap: wrap;
 padding-right: 30px;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-position: sticky; top: 0px; background: #ffffff;
+position: sticky; top: 0px; background: #4f76db;
 
 }
-li a:hover{background-color: #71a7e685;
+li a:hover{background-color: #77b7ecb5;
     padding: 7px 5px;
     border-radius: 4px;
-}.activity{
-    background-color: #56a3fccd;
+}
+
+.activity{
+    background-color: #2854c1;
     padding: 7px 5px;
       border-radius: 4px;
 }
@@ -139,7 +140,7 @@ nav li {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #faf3f3;
 }
 .di {
   background-color: #007bff;
@@ -157,22 +158,76 @@ nav a {
 h1, h2, h3 {
   color: #007bff; 
 }
-
-section {
-  padding: 40px;
-  background-color: #fff;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  margin:40px 2px 80px 5px;
- 
- 
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 2px;
 }
+
+.team-member {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid var(--primary-color);
+}
+
+.team-member h3 {
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.team-member p {
+    color: var(--text-color);
+    margin-bottom: 1rem;
+}
+
+.more-btn {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.more-btn:hover {
+    background-color: #0056b3;
+}
+.team-section {
+    padding: 4rem 2rem;
+    background-color: var(--background-color);
+}
+ 
+.about-section img{
+    width:100%;
+    height:50vh;
+    object-fit: cover;
+}
+
 .center-name { 
   font-family: 'خط المهند', sans-serif; 
-  font-size: 48px; 
-  color: #040404; 
+  font-size: 38px; 
+  color: #1d8fe7; 
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
-} section h2{
+} main h2{
     color: #040404;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
@@ -188,17 +243,18 @@ section {
     }
   body{
     display: grid;
-    grid-gap: 15px;
+    gap: 25px;
     grid-template: 
-    "header header"
-    "main main"
-    "footer footer";
+    "header"
+    "main"
+    "footer";
   }
   header{
     grid-area: header;
   }
   main{
     grid-area: main;
+    margin-top: 20%
   }
   footer{
     grid-area: footer;
