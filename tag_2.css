@@ -71,4 +71,145 @@ section {
         width: 95%;
         margin-left: 2.5%;
         margin-right: 2.5%;
+    } body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f6fa;
     }
+
+    .page-header {
+      background: linear-gradient(to right, #3498db, #5dade2);
+      color: white;
+      padding: 50px 20px 40px;
+      text-align: center;
+      border-bottom: 6px solid #2c80b4;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 30px 30px;
+    }
+
+    .page-header img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      border: 5px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
+      box-shadow: 0 0 15px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease;
+    }
+
+    .page-header img:hover {
+      transform: scale(1.05);
+    }
+
+    .page-header h1 {
+      font-size: 28px;
+      margin: 10px 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .page-header h1::before {
+      content: "👤";
+      font-size: 24px;
+    }
+
+    .page-header p {
+      font-size: 18px;
+      margin: 0;
+      color: #eaf3fc;
+    }
+
+    .lessons {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .lesson-card {
+      background-color: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      padding: 20px;
+      transition: transform 0.3s;
+      position: relative;
+    }
+
+    .lesson-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .lesson-card h3 {
+      margin: 0 0 10px;
+      font-size: 20px;
+      color: #2c3e50;
+    }
+
+    .lesson-card p {
+      margin: 0 0 15px;
+      font-size: 16px;
+      color: #666;
+    }
+
+    .lesson-card details {
+      margin-top: 15px;
+      border-top: 1px solid #eee;
+      padding-top: 10px;
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      color: #2980b9;
+      list-style: none;
+      position: relative;
+    }
+
+    details summary::marker {
+      display: none;
+    }
+
+    details[open] summary::after {
+      content: "▲";
+      position: absolute;
+      left: 0;
+    }
+
+    summary::after {
+      content: "▼";
+      position: absolute;
+      left: 0;
+    }
+
+    details ul {
+      margin: 10px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    details ul li {
+      margin-bottom: 8px;
+      font-size: 15px;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      .page-header h1 {
+        font-size: 22px;
+      }
+
+      .page-header p {
+        font-size: 16px;
+      }
+
+      .page-header img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+   
