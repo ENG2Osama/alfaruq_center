@@ -1,6 +1,7 @@
  body{
             background-color: #fbf9f7b3;
         }
+
             .page-header {
       background: linear-gradient(to right, #3498db, #5dade2);
       color: white;
@@ -169,7 +170,7 @@
             width: 98%;
             background-image: url(../logo/39.jpg);
             background-color: rgba(233, 234, 235, 0.425);
-            padding: 7px;
+            padding: 0px;
             min-width: 99%;
         }
 
@@ -348,4 +349,8 @@ section {
         height: 100px;
       }
     }
-   
+   body {
+      margin: 0;
+      font-family: 'Cairo', sans-serif;
+      background-color: #f4f6fa;
+    }
