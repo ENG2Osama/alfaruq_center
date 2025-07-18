@@ -167,11 +167,11 @@
         }
         .ho{ margin-top: 140px;
             height: 210px;
-            width: 98%;
+            width: 97vh;
             background-image: url(../logo/39.jpg);
             background-color: rgba(233, 234, 235, 0.425);
-            padding: 0px;
-            min-width: 99%;
+         
+            min-width: 96%;
         }
 
 
