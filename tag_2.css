@@ -312,10 +312,10 @@ section {
     }
 
     details[open] summary::after {
-      content: "▲";
+      content: "▲" ;
       position: absolute;
       left: 0;
-    }
+    }غ
 
     summary::after {
       content: "▼";
